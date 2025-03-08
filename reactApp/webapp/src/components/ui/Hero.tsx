@@ -9,11 +9,12 @@ const Hero = (): React.JSX.Element => {
     <section className="flex items-center justify-center max-w-[1100px] mx-auto flex-wrap-reverse xl:flex-nowrap py-10 gap-12">
       <div className="flex items-center justify-end text-center xl:text-left px-10 w-[40%]">
         <span className="text-2xl md:text-4xl md:flex items-center justify-end ">
-          Earth Friends <br />
-          Building a Greener Future Through Eco-Friendly Practices like Planting
-          Trees, using eco-friendly products, collecting and dumping garbage
-          responsibliy, Electric Vehicle , running environment campaign and many
-          more....
+          Green Lens,
+          Technology interventions are crucial for a sustainable future concerning carbon credits. 
+          Innovative solutions like AI-powered monitoring, blockchain-based verification, direct air capture (DAC), 
+          and precision agriculture enhance the accuracy, transparency, and scalability of carbon credit projects. 
+          These advancements drive effective carbon reduction and removal, ensure reliable monitoring, reporting, and verification (MRV), 
+          and foster trust in carbon markets, enabling a transition to a low-carbon economy through reliable carbon financing.
         </span>
       </div>
 
