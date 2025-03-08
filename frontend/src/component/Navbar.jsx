@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
 import { Web3Provider } from "ethers/providers";
+import logo from "./../assets/logo.jpg"
 
 function Header() {
   const [walletAddress, setWalletAddress] = useState(null);
@@ -35,9 +36,9 @@ function Header() {
     <header className="bg-[#bbf7d0cb] p-4 flex items-center justify-between sticky h-20 top-0 ">
       <div className="flex items-center space-x-2">
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-          Logo
+        <img src={logo} alt="" />
         </div>
-        <h1 className="text-lg font-semibold">Earth Friend</h1>
+        <h1 className="text-lg font-semibold">Green Lens</h1>
       </div>
       <div className="flex items-center space-x-2">
         {walletAddress ? (
