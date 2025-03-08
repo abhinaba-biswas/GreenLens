@@ -48,7 +48,7 @@ export const submitTransaction = async(userAddress: `0x${string}` , filename: st
 
     try {
         
-        const url: string = "http://localhost:3001/api/submitTransaction";
+        const url: string = "http://localhost:3002/api/submitTransaction";
 
         const data = {
 
@@ -80,7 +80,7 @@ export const execTransaction = async(userAddress: `0x${string}`, txIndexId: stri
 
     try {
 
-        const url: string = "http://localhost:3001/api/execTransaction";
+        const url: string = "http://localhost:3002/api/execTransaction";
 
         const data = {
 

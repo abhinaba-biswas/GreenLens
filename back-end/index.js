@@ -62,7 +62,7 @@ app.post("/api/submitTransaction", async (req, res) => {
     });
   }
 
-    const collection = db.collection("earthfriends-collection");
+    const collection = db.collection("greenlens-collection");
     const date = new Date();
     const {userAddr, fileName, ipfsPath, activityType, txId, tokenAmount, txIndexId } = req.body;
     console.log({userAddr, fileName, ipfsPath, activityType, txId, tokenAmount} )
@@ -112,7 +112,7 @@ app.post("/api/execTransaction", async (req, res) => {
         .send({ stauts: false, error: {message: "userAddr, txIndexId or txIndexId is missing" }});
     }
   
-      const collection = db.collection("earthfriends-collection");
+      const collection = db.collection("greenlens-collection");
       const date = new Date();
       const {userAddr, txIndexId, txId, status} = req.body;
       console.log({userAddr, txIndexId, txId, status})
@@ -147,7 +147,7 @@ app.get("/api/getTransactionsByUser", async (req, res) => {
         return res.status(403).send({ status: false,  error: {message: "userAddr is missing" }});
     }
     // const db = await connectToDatabase();
-    const collection = db.collection("earthfriends-collection");
+    const collection = db.collection("greenlens-collection");
     try {
         const result = await collection.find({userAddr: req.query.userAddr});
         if (result) {
@@ -171,7 +171,7 @@ app.get("/api/getTransactionsByUser", async (req, res) => {
 app.get("/api/getAllTransaction", async (req, res) => {
   // console.log("req.query.appLink ------ ", req.query.appLink, req.query.address)
   // const db = await connectToDatabase();
-  const collection = db.collection("earthfriends-collection");
+  const collection = db.collection("greenlens-collection");
   try {
       const result = await collection.find().sort({["date"]: -1});
       if (result) {
