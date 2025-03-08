@@ -36,7 +36,7 @@ function Header() {
     <header className="bg-[#bbf7d0cb] p-4 flex items-center justify-between sticky h-20 top-0 ">
       <div className="flex items-center space-x-2">
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
         </div>
         <h1 className="text-lg font-semibold">Green Lens</h1>
       </div>
