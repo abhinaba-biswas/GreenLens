@@ -12,7 +12,7 @@ function Statistics() {
     },
     {
       label: "Total Token Issued",
-      value: "800000 EFRND",
+      value: "800000 GL",
       color: "bg-orange-300",
     },
   ];

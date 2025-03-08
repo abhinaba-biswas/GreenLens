@@ -30,7 +30,7 @@ const TableComponent = (): React.JSX.Element => {
                 <TableRow>
                     <TableCell className="font-medium text-center">tree planted</TableCell>
                     <TableCell className="text-center">tree.png</TableCell>
-                    <TableCell className="text-center">100 EFRND</TableCell>
+                    <TableCell className="text-center">100 GL</TableCell>
                     <TableCell className="text-center">0x123abc</TableCell>
                     <TableCell className="text-center">pending</TableCell>
                     <TableCell className="text-center">01-11-2024</TableCell>
