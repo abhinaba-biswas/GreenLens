@@ -80,7 +80,7 @@ export const execTransaction = async(userAddress: `0x${string}`, txIndexId: stri
 
     try {
 
-        const url: string = "http://localhost:8000/api/execTransaction";
+        const url: string = "http://localhost:3001/api/execTransaction";
 
         const data = {
 

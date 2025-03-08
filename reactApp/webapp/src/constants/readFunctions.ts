@@ -6,7 +6,7 @@ export const getTransactionsByUser = async(userAddress: `0x${string}`) => {
 
     try {
         
-        let url: string = "http://127.0.0.1:3001/api/getTransactionsByUser";
+        let url: string = "http://localhost:3001/api/getTransactionsByUser";
 
         let params = { 
 
